@@ -6,7 +6,6 @@
 
 本项目希望能利用交互式空间数据分析技术，使用 flask + pyecharts 搭建简单新冠肺炎疫情数据可视化交互分析平台，感知和预测疫情发展趋势与关键节点、分析社交媒体话题与情感的动态演变、对社会舆情进行态势感知。
 
-项目分析报告已部署到网页端，可点击[http://covid.yunwei123.tech/](http://covid.yunwei123.tech/)进行查看
 
 交互可视化分析报告截图：
 
@@ -55,7 +54,7 @@
 - server.py：flask app
 - 新冠肺炎时序数据预测算法设计.docx
 
-## 作业部分相关技术栈
+## 工程部分相关技术栈
 
 - 数据库的构建与 sql 语句查询
 - pyEchart 可视化
@@ -68,25 +67,11 @@
 
 1. 运行 server.py:
 
-Use docker:
 
-```
-docker build -t covidvisimage .
-docker run -d --name covidvis -p 5000:5000 covidvisimage
-```
-
-OR:
-
-```
 pip3 install -r requirements.txt
 python3 server.py
-```
+
 
 2. 打开  http://127.0.0.1:5000/
-
-注：此处使用的pyecharts版本为`1.7.1`，可能和后续 1.8 以上的版本存在部分不兼容，可以通过以下命令安装：
-
->pip install pyecharts==1.7.1
-
 
 
